@@ -1,11 +1,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>write</title>
+    <title>list</title>
 <body>
 {% for db in dbCon %}
-title : {{ db.title }} | name : {{db.name}}<br>
+<a href="/app1/view/{{db.id}} ">title : {{ db.title }} | name : {{db.name}}</a>
+<br>
 {% endfor %}
-</body> 
+<a href="/app1/aw/">글쓰기</a>
+</body>
 </head>
 </html>
+

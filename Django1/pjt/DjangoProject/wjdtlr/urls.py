@@ -20,5 +20,5 @@ from app1.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/',include('app1.urls')),
-   # path('write',write,name='write')
+
 ]

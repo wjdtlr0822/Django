@@ -19,3 +19,7 @@ def write(request):
 def list(request):
     dbCon=dbtest.objects.all()                         #dbtest에 있는 모든  object(내용)을 가져옴
     return render(request,'list.html',{'dbCon':dbCon})
+
+def view(request,num):
+    dbCon=dbtest.objects.get(id=num)                 # model에 대한 id가 무조건 생성된다(?)
+    return render(request,'view.html',{'dbCon':dbCon})
