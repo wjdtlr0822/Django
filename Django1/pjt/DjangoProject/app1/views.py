@@ -10,6 +10,8 @@ def write(request):
         form=Form(request.POST)               # ModelForm에 request.POST를 전송
         if form.is_valid():                   #
             form.save()                       # 웹프레임 워크를 쓰지 않을경우 변수,sql문을 작성하여 넘거야함
+            dbCon=dbtest.objects.all()
+            return render(request,'list.html',{'dbCon':dbCon})
     else:
         form=Form()                           #request.method가 post가 아닐경우 그냥 출력
 
