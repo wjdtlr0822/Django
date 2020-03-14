@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>View</title>
 </head>
 <body>
-$END$
+    이름 : {{db.name}}<br>
+    전공 : {{db.major}}<br>
+    이름 : {{db.age}}<br>
+    학년 : {{db.grade}}<br>
+    성별 : {{db.gender}}<br>
+<a href="/app1/list/">list</a><a href="/app1/rewrite/{{db.id}}/">edit</a>
 </body>
 </html>

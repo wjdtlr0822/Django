@@ -19,7 +19,7 @@ def write(request):
 
 
 def list(request):
-    dbCon=dbtest.objects.all()                         #dbtest에 있는 모든  object(내용)을 가져옴
+    dbCon=dbtest.objects.all()                    #dbtest에 있는 모든  object(내용)을 가져옴
     return render(request,'list.html',{'dbCon':dbCon})
 
 def view(request,num):

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Write</title>
+    <title>ReWrite</title>
 </head>
 <body>
    <form action="{% url 'app1:save' %}" method="POST">
 
     {{form.as_p}}
     {%csrf_token%}
-    <button type="submit" class="btn btn-primary">저장</button>
+    <button type="submit" class="btn btn-primary">수정</button>
    </form>
 </body>
 </html>

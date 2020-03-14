@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View</title>
+    <title>Write</title>
 </head>
 <body>
-    이름 : {{db.name}}
-    전공 : {{db.major}}
-    이름 : {{db.age}}
-    학년 : {{db.grade}}
-    성별 : {{db.gender}}
+   <form action="{% url 'app1:save' %}" method="POST">
+
+    {{form.as_p}}
+    {%csrf_token%}
+    <button type="submit" class="btn btn-primary">저장</button>
+   </form>
 </body>
 </html>
