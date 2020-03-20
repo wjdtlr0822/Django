@@ -26,7 +26,7 @@ import requests
 from bs4 import BeautifulSoup
 
 no=100
-keyword='자동차'
+keyword='펠리세이드'
 url="https://search.naver.com/search.naver?where=image&sm=tab_jum&query="+keyword
 html = requests.get(url)
 bs_html = BeautifulSoup(html.content,"html.parser")
